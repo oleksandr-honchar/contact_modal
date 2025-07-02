@@ -77,19 +77,18 @@ button {
 
 /* Modal background */
 .modal {
-  position: fixed; /* Fixed position */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
-  z-index: 1000; /* Ensures the modal is above other content */
-  overflow: hidden; /* Prevent scrolling */
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: auto;
   justify-content: center;
-  align-items: flex-start; /* 👈 aligns modal at top */
-  padding-top: 30px; /* 👈 spacing from top */
-  overflow-y: auto; /* 👈 enable scroll if needed */
+  align-items: center;
+  padding: 30px;
+  display: none; /* Keep only this */
 }
 
 /* Modal content */
