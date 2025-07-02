@@ -77,7 +77,6 @@ button {
 
 /* Modal background */
 .modal {
-  display: none;
   position: fixed; /* Fixed position */
   top: 0;
   left: 0;
@@ -86,17 +85,23 @@ button {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
   z-index: 1000; /* Ensures the modal is above other content */
   overflow: hidden; /* Prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 👈 aligns modal at top */
+  padding-top: 30px; /* 👈 spacing from top */
+  overflow-y: auto; /* 👈 enable scroll if needed */
 }
 
 /* Modal content */
 .modal-content {
-  position: relative; /* ✅ enables absolute child positioning */
-  background-color: #fff;
+  position: relative;
+  background-color: #fceee6;
   padding: 20px;
   width: 343px;
-  height: 794px;
-  margin: 100px auto;
+  height: 90vh;
+  overflow-y: auto; /* 👈 scroll if content exceeds */
   border-radius: 5px;
+  margin: 0 auto; /* Center the modal */
 }
 
 /* Close button */
