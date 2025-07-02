@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="container page-header">
+      <nav class="header-navigation">
+        <a
+          class="logo header-logo"
+          href="./index.html"
+          title="Oleksandr's Logo>"
+        >
+          <img src="./images/logo.ico" alt="Logo" class="logo-img" />
+        </a>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </nav>
+
+      MENU
+
+      <div class="menu" data-menu>
+        <div class="container menu-container">
+          <button class="menu-close-btn" type="button" data-menu-close>
+            <svg class="menu-close-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <h2 class="menu-title">MENU</h2>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a
+                  class="nav-item-link"
+                  href="./index.html"
+                  title="Go to Home page"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-item-link"
+                  href="./projects.html"
+                  title="Go to Projects page"
+                  >PROJECTS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-item-link"
+                  href="./about.html"
+                  title="Go to About me page"
+                  >ABOUT ME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-item-link"
+                  href="./contact.html"
+                  title="Go to Contact page"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts-media">
+            <div class="grid">
+              <img src="./images/sum.svg" class="icon" alt="sum symbol" />
+              <img
+                src="./images/storage.svg"
+                class="icon"
+                alt="storage symbol"
+              />
+              <img
+                src="./images/function.svg"
+                class="icon"
+                alt="function symbol"
+              />
+              <img src="./images/chart.svg" class="icon" alt="chart symbol" />
+              <img
+                src="./images/brainstorm.svg"
+                class="icon"
+                alt="brainstorm symbol"
+              />
+              <img
+                src="./images/decrease.svg"
+                class="icon"
+                alt="decrease symbol"
+              />
+              <img
+                src="./images/analysis.svg"
+                class="icon"
+                alt="analysis symbol"
+              />
+              <img src="./images/search.svg" class="icon" alt="search symbol" />
+              <img
+                src="./images/spreadsheet.svg"
+                class="icon"
+                alt="spreadsheet symbol"
+              />
+            </div>
+            <address class="menu-contacts">
+              <ul class="menu-contacts-list">
+                <li class="menu-contacts-item">
+                  <a
+                    class="menu-contacts-mail"
+                    href="mailto:honchar.analytics@gmail.com"
+                    >honchar.analytics@gmail.com</a
+                  >
+                </li>
+                <li class="menu-contacts-item">
+                  <a
+                    class="menu-contacts-phone"
+                    href="tel:+48733793430"
+                    title="Call Oleksandr"
+                    >+48 733 793 430</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="menu-social-media">
+              <ul class="menu-social-media-list">
+                <li class="menu-social-media-item">
+                  <a
+                    class="menu-social-media-link"
+                    href="https://www.linkedin.com/in/oleksandrhonchar/"
+                    title="Discover Oleksandr's LinkedIn profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="menu-social-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-media-item">
+                  <a
+                    class="menu-social-media-link"
+                    href="https://www.facebook.com/figules"
+                    title="Discover Oleksandr's Facebook profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="menu-social-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENDREGION MENU -->
+
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">MY PROJECTS</h1>
+          <p class="hero-text">BUILT FOR INSIGHT</p>
+        </div>
+      </section>
+
+      <!-- ENDREGION HEADER-HERO SECTION -->
+    </header>
+
+    <main>
+      <!-- REGION MY PORTFOLIO SECTION -->
+
+      <section class="projects">
+        <div class="container projects-container">
+          <h2 class="portfolio-title visually-hidden">My Projects</h2>
+          <ul class="portfolio-list project-list">
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./project1.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/revenue-desktop-large@1x.jpg 1x,
+                        ./images/revenue-desktop-large@2x.jpg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/revenue-desktop@1x.jpg 1x,
+                        ./images/revenue-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/revenue-tablet@1x.jpg 1x,
+                        ./images/revenue-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/revenue-mobile@1x.jpg 1x,
+                        ./images/revenue-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/revenue-desktop@1x.jpg"
+                      alt="revenue metrics"
+                    />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    SQL queries extract and calculate key revenue metrics like
+                    MRR, Paid Users, Churn, and LTV. The dashboard then
+                    visualizes these metrics, helping product managers track and
+                    analyze monthly revenue dynamics and uncover trends in user
+                    behavior.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./project1.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Revenue Metrics</h3>
+                <p class="portfolio-list-text">SQL & Tableau</p>
+              </div>
+            </li>
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./comingsoon.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/buildings-desktop-large.jpg    1x,
+                        ./images/buildings-desktop-large@2x.jpg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/buildings-desktop.jpg    1x,
+                        ./images/buildings-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/buildings-tablet.jpg    1x,
+                        ./images/buildings-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/buildings-mobile.jpg    1x,
+                        ./images/buildings-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/buildings-mobile.jpg"
+                      alt="apartment buildings"
+                    />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    This interactive dashboard analyzes housing affordability in
+                    Poland by comparing long-term costs of buying vs. renting.
+                    It integrates real estate prices, rent trends, mortgage
+                    rates, and break-even timelines across major cities.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./comingsoon.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Buy vs Rent Dashboard</h3>
+                <p class="portfolio-list-text">Python & Tableau</p>
+              </div>
+            </li>
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./comingsoon.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/restaurant_desktop_large.webp 1x,
+                        ./images/restaurant_desktop_large.webp 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restaurant_desktop.webp 1x,
+                        ./images/restaurant_desktop.webp 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restaurant_tablet.webp 1x,
+                        ./images/restaurant_tablet.webp 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restaurant_mobile.webp 1x,
+                        ./images/restaurant_mobile.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./imagesrestaurant_mobile.webp"
+                      alt="restaurant menu"
+                    />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    This project delivers a normalized SQL database to manage
+                    orders, inventory, and staff for a mid-size restaurant —
+                    supporting analytics for sales, stock, and labor costs.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./comingsoon.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Restaurant Database</h3>
+                <p class="portfolio-list-text">SQL & Python & VS Code</p>
+              </div>
+            </li>
+
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./comingsoon.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/coming-soon.jpeg" alt="coming soon" />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    This interactive dashboard analyzes housing affordability in
+                    Poland by comparing long-term costs of buying vs. renting.
+                    It integrates real estate prices, rent trends, mortgage
+                    rates, and break-even timelines across major cities.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./comingsoon.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Coming Soon Project</h3>
+                <p class="portfolio-list-text">Tools Used</p>
+              </div>
+            </li>
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./comingsoon.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/coming-soon.jpeg" alt="coming soon" />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    This interactive dashboard analyzes housing affordability in
+                    Poland by comparing long-term costs of buying vs. renting.
+                    It integrates real estate prices, rent trends, mortgage
+                    rates, and break-even timelines across major cities.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./comingsoon.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Coming Soon Project</h3>
+                <p class="portfolio-list-text">Tools Used</p>
+              </div>
+            </li>
+            <li class="portfolio-list-item">
+              <div class="thumb">
+                <a
+                  class="project-link"
+                  href="./comingsoon.html"
+                  title="Go to Project page"
+                >
+                  <picture class="portfolio-img">
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 1158px) and (max-width: 1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1157px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coming-soon.jpeg 1x,
+                        ./images/coming-soon.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/coming-soon.jpeg" alt="coming soon" />
+                  </picture>
+                </a>
+                <div class="overlay">
+                  <p class="overlay-text">
+                    This interactive dashboard analyzes housing affordability in
+                    Poland by comparing long-term costs of buying vs. renting.
+                    It integrates real estate prices, rent trends, mortgage
+                    rates, and break-even timelines across major cities.
+                  </p>
+                  <div class="overlay-link">
+                    <a
+                      class="discover-link"
+                      href="./comingsoon.html"
+                      title="Go to Project page"
+                    >
+                      <p class="discover-link-text">Discover</p>
+                      <svg class="arrow-icon" width="16" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="name-type">
+                <h3 class="portfolio-list-title">Coming Soon Project</h3>
+                <p class="portfolio-list-text">Tools Used</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ENDREGION MY PORTFOLIO SECTION -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">HOME</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./about.html" class="footer-nav-link">ABOUT ME</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./contact.html" class="footer-nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts-logo">
+          <address class="footer-contacts">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link"
+                  href="mailto:honchar.analytics@gmail.com"
+                  title="Email Oleksandr"
+                  >honchar.analytics@gmail.com</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link"
+                  href="tel:+48733793430"
+                  title="Call Oleksandr"
+                  >+48 733 793 430</a
+                >
+              </li>
+            </ul>
+          </address>
+          <a
+            class="logo footer-logo"
+            href="./index.html"
+            title="Oleksandr's Logo back to page start"
+          >
+            <img src="./images/logo.ico" alt="Logo" class="logo-img" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+
+    <!-- ENDREGION BACKDROP -->
+  </body>
+</html>
